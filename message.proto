@@ -1,0 +1,17 @@
+package pb;
+
+import "text.proto";
+import "photo.proto";
+import "video.proto";
+
+message Message {
+	optional Text text = 1;
+	optional Photo photo = 2;
+	optional Video video = 3;
+}
+
+message EncryptedMessage {
+	optional EncryptedText text = 1;
+	optional EncryptedPhoto photo = 2;
+	optional EncryptedVideo video = 3;
+}

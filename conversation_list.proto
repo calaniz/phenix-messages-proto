@@ -1,0 +1,11 @@
+package pb;
+
+import "conversation.proto";
+
+message ConversationList {
+	repeated Conversation conversations = 1;
+}
+
+message EncryptedConversationList {
+	repeated EncryptedConversation conversations = 1;
+}

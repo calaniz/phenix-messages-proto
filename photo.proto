@@ -1,0 +1,22 @@
+package pb;
+
+message Photo {
+	required uint64 id = 1;
+	required uint32 type = 2 [default = 2];	
+	required uint64 conversationId = 3;
+	required uint64 userId = 4;
+	required uint32 regionId = 5;
+	optional uint64 parentId = 6;
+	required string url = 7;
+}
+
+message EncryptedPhoto {
+	required string id = 1;
+	required uint32 type = 2 [default = 2];
+	required string conversationId = 3;
+	required string userId = 4;
+	required string regionId = 5;
+	optional string parentId = 6;
+	required string url = 7;
+
+}

@@ -1,0 +1,19 @@
+package pb;
+
+import "message.proto";
+import "conversation_admin.proto";
+import "conversation_user.proto";
+
+message Conversation {
+  required uint64 id = 1;
+  required string title = 2;  
+ 	repeated ConversationAdmin admins = 3;
+ 	repeated ConversationUser users = 4;
+}
+
+message EncryptedConversation {
+	required string id = 1;
+	required string title = 2;
+	repeated EncryptedConversationAdmin admins = 3;
+	repeated EncryptedConversationUser users = 4;
+}

@@ -1,0 +1,11 @@
+package pb;
+
+import "message.proto";
+
+message MessageList {
+	repeated Message messages = 1;
+}
+
+message EncryptedMessageList {
+	repeated EncryptedMessage messages = 1;
+}

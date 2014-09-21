@@ -1,0 +1,19 @@
+package pb;
+
+message ConversationAdmin {
+  required uint64 id = 1;
+  required uint64 conversationId = 2;
+  required uint64 userId = 3;
+  required uint32 regionId = 4;
+  optional string email = 5;
+  optional string username = 6;
+}
+
+message EncryptedConversationAdmin {
+	required string id = 1;
+  required string conversationId = 2;
+  required string userId = 3;
+  required string regionId = 4;
+  optional string email = 5;
+  optional string username = 6;
+}
